@@ -1,19 +1,15 @@
 # Programación con Pascal 🏗️
 Este repositorio contiene ejercicios y ejemplos de programación en Pascal, centrados especialmente en el manejo de estructuras de datos como pilas.
 
-📂 ##Estructura del repositorio
-Copy
-pascal/
-│
-├── unidad1/                # Primeros programas usando pilas
-│   ├── ejx.pas    # ejercicios de practica
-│   ├── introx.pas    # ejercicios de ejemplo
-│
-├── unidad2/              # Agregando consiciones compuestas y filas
-│   └── pilas.pas         # Implementación básica de pilas
-│
-└── tp/             # Ejemplos adicionales
+📂 ## Estructura del directorio
 
+- **pascal/**
+  - **unidad1/** - Primeros programas usando pilas
+    - `ejx.pas` - Ejercicios de práctica
+    - `introx.pas` - Ejercicios de ejemplo
+  - **unidad2/** - Condiciones compuestas y filas
+    - `pilas.pas` - Implementación básica de pilas
+  - **tp/** - Trabajos prácticos y ejemplos adicionales
 
 🛠️ Requisitos
 - Compilador de Pascal (Free Pascal, Turbo Pascal, Delphi)
