@@ -4,35 +4,25 @@ pila CJTO1 y el restante a la pila CJTO2, ambas pilas inicializadas en vacío.}
 
 program PilasBasico;
 
-type
-    TPila = array[1..3] of integer;
 
 var
-    DADA, CJTO1, CJTO2: TPila;
-    i, tope, valor: integer;
+    DADA, CJTO1, CJTO2: Pila;
+
+
 begin
-    tope := 0;
-    writeln('Ingrese hasta 3 valores para la pila DADA:');
-    for i := 1 to 3 do
-    begin
-        readln(valor);
-        tope := tope + 1;
-        DADA[tope] := valor;
+    ReadPila(DADA);
+    InicPila(CJTO1,'');
+    InicPila(CJTO2,'');
+    while not PilaVacia(DADA) do
+        if Tope(DADA)
+        then begin
+            Apilar(CJTO1, Desapilar(DADA));
+            if not PilaVacia(DADA) then
+                Apilar(CJTO2, Desapilar(DADA));
+        end;
     end;
-    
-    if tope > 0 then
-    begin
-        CJTO1[1] := DADA[tope]; tope := tope - 1;
-    end;
-    if tope > 0 then
-    begin
-        CJTO1[2] := DADA[tope]; tope := tope - 1;
-    end;
-    if tope > 0 then
-    begin
-        CJTO2[1] := DADA[tope]; tope := tope - 1;
-    end;
-    
-    writeln('Pila CJTO1: ', CJTO1[1], ' ', CJTO1[2]);
-    writeln('Pila CJTO2: ', CJTO2[1]);
+    WriteLn('Pila DADA: ');
+    WritePila(DADA);
+    WriteLn('Pila CJTO1: ');
+    WritePila(CJTO1);
 end.
