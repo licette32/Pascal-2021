@@ -1,7 +1,7 @@
 # Programación con Pascal 🏗️
 Este repositorio contiene ejercicios y ejemplos de programación en Pascal, centrados especialmente en el manejo de estructuras de datos como pilas.
 
-📂 ## Estructura del directorio
+## 📂Estructura del directorio
 
 - **pascal/**
   - **unidad1/** - Primeros programas usando pilas
@@ -9,6 +9,8 @@ Este repositorio contiene ejercicios y ejemplos de programación en Pascal, cent
     - `introx.pas` - Ejercicios de ejemplo
   - **unidad2/** - Condiciones compuestas y filas
     - `pilas.pas` - Implementación básica de pilas
+  - **unidad3/** - Parámetros
+  - **unidad4/** - Variables
   - **tp/** - Trabajos prácticos y ejemplos adicionales
 
 🛠️ Requisitos
